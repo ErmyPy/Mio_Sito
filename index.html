@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Website</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    nav {
+        background-color: #444;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+    nav a:hover {
+        background-color: #555;
+    }
+    main {
+        padding: 20px;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+</header>
+
+<nav>
+    <a href="#" id="home">Home</a>
+    <a href="#" id="about">About</a>
+    <a href="#" id="contact">Contact</a>
+</nav>
+
+<main>
+    <div id="content">
+        <h2>Home</h2>
+        <p>This is the home page content.</p>
+    </div>
+</main>
+
+<footer>
+    &copy; 2024 Simple Website
+</footer>
+
+<script>
+    document.getElementById('home').addEventListener('click', function() {
+        document.getElementById('content').innerHTML = `
+            <h2>Home</h2>
+            <p>This is the home page content.</p>
+        `;
+    });
+
+    document.getElementById('about').addEventListener('click', function() {
+        document.getElementById('content').innerHTML = `
+            <h2>About</h2>
+            <p>This is the about page content.</p>
+        `;
+    });
+
+    document.getElementById('contact').addEventListener('click', function() {
+        document.getElementById('content').innerHTML = `
+            <h2>Contact</h2>
+            <p>This is the contact page content.</p>
+        `;
+    });
+</script>
+
+</body>
+</html>
+
